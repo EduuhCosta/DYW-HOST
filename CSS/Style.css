@@ -1,0 +1,514 @@
+/* GERAL */
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1{
+
+    color: #333;
+    padding-top: 5rem ;
+}
+h2, h3{
+
+    color: #ffffff;
+}
+p{
+
+    color: #ffffff;
+}
+.navbar-container{
+
+    width: 100%;
+    height: 80px;
+    background-color: #545454;
+    padding: 0 2rem;
+}
+nav{
+
+    position: relative;
+}
+.logo{
+
+    width: 85px;
+    margin-top: -5px;
+}
+.navbar-items{
+
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+.navbar-items li{
+
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.navbar-items a{
+
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar-items a:hover{
+
+    color: #38B6FF;
+}
+.default-btn {
+
+    padding: 15px 25px;
+    background-color: #38B6FF;
+    border-radius: 5px;
+}
+.navbar-items .default-btn:hover{
+
+    background-color: #3e84ad;
+}
+/* MAIN BANNER*/
+
+.main-banner{
+
+    background-image: url("../IMG/pexels-javon-swaby-3300825.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: -55rem 0;
+}
+.main-banner h1{
+    
+    color: #545454;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    font-size: 150px;
+    font-weight: bolder;
+    text-shadow: #ffffff 3px 2px 3px;
+}
+.main-banner p{
+    
+    color: #545454;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: #fff 3px 2px 3px;
+}
+.main-banner h4{
+
+    color: #545454;
+    font-size: 54px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: #fff 3px 2px 3px;
+}
+.main-banner h5{
+
+    color: #545454;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: #fff 3px 2px 3px;
+}
+/* SERVICES */
+
+
+.service-container{
+
+    padding: 5rem 0;
+}
+.service-container ul{
+
+    display: flex;
+    right: 90%;
+    margin: 0 auto;
+}
+.service-container li{
+    background-color: #545454;
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+.service-container p{
+
+    padding-top: 10px;
+    color: #ffffff;
+    text-shadow: none;
+}
+.fas{
+
+    font-size: 60px;
+    margin: bottom;
+}
+.fa-shield-alt{
+
+
+    color: #38B6FF;
+}
+.fa-rocket{
+
+
+    color: #ff3838;
+}
+.fa-comments{
+
+  
+    color: #ffaf38;
+}
+.service-container h3 {
+
+    text-shadow: #ccc 3px 2px 3px;
+    margin-bottom: 25px;
+}
+.service-container p {
+
+    line-height: 25px;
+}
+/* PRICE AND PLANS */
+
+.pricing-container{
+
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.pricing-container h2{
+
+    border-bottom: 4px solid rgb(255, 255, 255);
+    font-family: Tahoma, sans-serif;
+    text-shadow: #464646 3px 2px 3px;
+    padding-top: 150px;
+    font-size: 56px;
+    margin-top: 0;
+}
+
+.pricing-container p{
+    color: #ffffff;
+    padding-top: 12px;
+    font-size: 35px;
+    text-shadow: none;
+}
+.plans-container{
+
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+
+}
+.plans-container li{
+
+    color: white;
+}
+.plan{
+
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul{
+
+    margin-bottom: 2px;
+    padding: 0;
+}
+.plan li{
+
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #545454;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-style: solid;
+}
+.plan .price{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: #38B6FF;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    border-style: none;
+    margin: 0 auto -50px;
+    position: relative;
+}
+
+.plan .plan-name{
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #333;
+    padding: 50px 0;
+    transition: 0.5;
+}
+.plan .price-btn{
+
+    color: #fff;
+    background-color: #38B6FF;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.plan .price-btn:hover{
+
+    color: #fff;
+    background-color: #006ead;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+.plan .recommended {
+
+    background-color: #ff3838;
+}
+.plan .recommended:hover{
+
+    background-color: #ff000044;
+}
+
+/* Search Domain*/
+
+.searchdomain-container{
+
+    background-color: #545454;
+    text-align: center;
+    padding: 5rem 0;
+}
+.searchdomain-container h2{
+
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.searchdomain-container p{
+
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-shadow: none;
+}
+.searchdomain-container input{
+
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.searchdomain-container input[type="text"]{
+
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.searchdomain-container input[type="submit"]{
+
+    background-color: #38B6FF;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.searchdomain-container input[type="submit"]:hover{
+
+    background-color: #38B6FF;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 1;
+}
+/*contact-form*/
+
+.contact-container{
+
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.contact-container h2{
+
+    font-size: 54px;
+    margin-bottom: 15px;
+}
+.contact-container h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+.contact-container p{
+
+    text-shadow: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.contact-container input,
+.contact-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+.contact-container input[type=submit]{
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #38B6FF;
+    color: white;
+    cursor: pointer;
+}
+.select{
+
+    background-color: #545454;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*RESPOSIVIDADE*/
+
+/*SMALL LAPTOPS a partir de 1100px */
+
+@media (max-width: 1100px){
+
+    .service-container h3 {
+        font-size: 30px;
+        text-shadow: #ccc 3px 2px 3px;
+        margin-bottom: 10px;
+    }
+    .service-container p {
+        padding: 10px 10px 10px 10px;
+    }
+    .main-banner .service-container p {
+        color: #ffffff;
+        text-shadow: none;
+        line-height: 15px;
+    }
+
+}
+/*Tablets 900px*/
+
+@media (max-width: 900px){
+
+    .plan li{
+
+        font-size: 13.5px;
+        list-style: none;
+        height: 50px;
+        background-color: #545454;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border-style: solid;
+    }
+}
+@media (max-width: 576px){
+
+    html,
+    body{
+
+        overflow-x: hidden;
+    }
+    .navbar-container {
+
+        padding: 0 1rem;
+    }
+    .navbar-container li{
+        font-size: 12px;
+        margin-left: 10px;
+
+    }
+    .navbar-items{
+
+        line-height: 70px;
+
+    }
+    .logo{
+        display: inline;
+        float: left;
+    }
+    .main-banner{
+
+        padding: 0 2rem;
+    }
+    .main-banner h1{
+        font-size: 100px;
+    }
+
+    .plans-container{
+
+        flex-direction: column;
+        width: 100%;
+    }
+    .plan{
+
+        max-width: 100%;
+    }
+    .plan ul{
+        padding: 10px;
+    }
+    .contact-container{
+
+        padding: 3rem 2rem;
+    }
+    .contact-container h2{
+        text-shadow: #ccc 3px 2px 2px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .contact-container h3{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .contact-container input,
+    .contact-container textarea{
+
+        width: 100%;
+        margin: 10px 0;
+    }
+    .service-container ul{
+
+        display: block;
+    }
+
+    .service-container li{
+
+        background-color: #545454;
+        flex: 1 1 200px;
+        list-style: none;
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .searchdomain-container input[type="text"]{
+
+        width: 80%;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .searchdomain-container{
+        width: 700px auto;
+
+    }
+}
